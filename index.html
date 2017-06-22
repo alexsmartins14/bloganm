@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="libs/bootstrap/dist/css/bootstrap.min.css">
+	<title>Bloganm</title>
+</head>
+<body ng-app="bloganm">
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="collapsed navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-6" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+		<a href="#" class="navbar-brand">Bloganm</a>
+		</div>
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-6">
+			<ul class="nav navbar-nav">	
+			<li>
+				<a href="#users/registre">Cadastra-se</a>
+			</li>
+			</ul>
+		</div>
+		</div>
+	</nav>
+	<div ng-view>
+		<h1>Seja bem vindo ao Bloganm!</h1>
+	</div>
+	<script src="libs/jquery/dist/jquery.min.js"></script>
+	<script src="libs/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="libs/angular/angular.min.js"></script>
+	<script src="libs/angular-bootstrap/ui-bootstrap.min.js"></script>
+	<script src="libs/angular-route/angular-route.min.js"></script>
+	
+	<script src="modules/modules.js"></script>
+	<script src="modules/users/modules.js"></script>
+	<script src="modules/users/registre/controller.js"></script>
+</body>
+</html>
